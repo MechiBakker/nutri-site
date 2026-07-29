@@ -5,7 +5,7 @@
 // ─────────────────────────────────────────────────────────
 
 export const siteConfig = {
-  nombre: 'Lic. Nombre Apellido',
+  nombre: 'Lic. Valeria Martinez',
   titulo: 'Nutricionista · M.N. 00000',
   bio: 'Acompaño procesos de alimentación consciente, con planes hechos a medida y seguimiento cercano. Trabajo desde la evidencia científica y sin dietas mágicas.',
   // Reemplazá por la URL de la foto real (podés subirla a /public y poner "/tu-foto.jpg")
