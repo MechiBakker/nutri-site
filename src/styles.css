@@ -2,11 +2,11 @@
   --verde-oscuro: #ccda68;
   --verde-seco: #eaea92;
   --rosa: #f9d5d3;
-  --verde-claro: #e3e6d6;
+  --verde-claro: #eaea92;
   --hueso: #faf9f4;
   --blanco: #ffffff;
-  --texto: #333c2c;
-  --texto-suave: #5c6650;
+  --texto: #ccda68;
+  --texto-suave: #eaea92;
 
   --font-display: 'Balibong', serif;
   --font-body: 'DIN Pro', sans-serif;
@@ -52,7 +52,7 @@ button {
   font-size: 0.78rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--verde-medio);
+  color: var(--rosa);
   font-weight: 600;
 }
 
@@ -73,7 +73,7 @@ h1, h2, h3 {
 
 /* ---------- HERO ---------- */
 .hero {
-  background: linear-gradient(180deg, var(--hueso) 0%, var(--rosa) 100%);
+  background: linear-gradient(180deg, var(--hueso) 0%, var(--verde-claro) 100%);
   padding: 72px 0 90px;
 }
 
@@ -200,7 +200,7 @@ section { padding: 88px 0; }
   aspect-ratio: 4/3;
   border-radius: 14px;
   overflow: hidden;
-  background: var(--rosa);
+  background: var(--verde-claro);
   margin-bottom: 16px;
 }
 
@@ -253,7 +253,7 @@ section { padding: 88px 0; }
 
 .turnos .section-header h2 { color: var(--hueso); }
 .turnos .section-header p { color: rgba(250, 249, 244, 0.75); }
-.turnos .eyebrow { color: var(--rosa); }
+.turnos .eyebrow { color: var(--verde-claro); }
 
 .turnos-grid {
   display: grid;
@@ -309,7 +309,7 @@ section { padding: 88px 0; }
   width: 100%;
   padding: 11px 14px;
   border-radius: 10px;
-  border: 1.5px solid var(--rosa);
+  border: 1.5px solid var(--verde-claro);
   background: var(--blanco);
   font-family: inherit;
   font-size: 0.95rem;
