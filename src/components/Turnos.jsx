@@ -56,7 +56,7 @@ export default function Turnos() {
     <section className="turnos" id="turnos">
       <div className="container">
         <div className="section-header">
-          <span className="eyebrow" color='#e95f9e'>Turnos</span>
+          <span className="eyebrow">Turnos</span>
           <h2>Reservá tu consulta</h2>
           <p>Atención presencial y online. Elegí la modalidad que te quede mejor.</p>
         </div>

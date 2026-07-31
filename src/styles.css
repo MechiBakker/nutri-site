@@ -316,7 +316,7 @@ section { padding: 88px 0; }
 }
 
 .turnos .section-header p { color: var(--verde-oscuro); }
-.turnos .eyebrow { color: var(--verde-oscuro); }
+.turnos .eyebrow { color: var(--rosa); }
 
 .turnos-grid {
   display: grid;
