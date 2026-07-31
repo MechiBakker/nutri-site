@@ -84,8 +84,7 @@ export default function Tienda() {
 
         {esDemo && !cargando && (
           <p className="estado-tienda" style={{ marginBottom: 24 }}>
-            Mostrando recetarios de ejemplo. Cargá los tuyos en la tabla{' '}
-            <code>productos</code> de Supabase para reemplazarlos.
+            Mostrando recetarios de ejemplo. Se cargan desde el panel /Admin
           </p>
         )}
 
