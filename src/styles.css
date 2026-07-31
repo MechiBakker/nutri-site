@@ -269,8 +269,8 @@ section { padding: 88px 0; }
 }
 
 .modalidad-card {
-  background: rgba(250, 249, 244, 0.06);
-  border: 1px solid rgba(250, 249, 244, 0.18);
+  background: rgb(250, 249, 244);
+  border: 1px solid rgb(250, 249, 244);
   border-radius: var(--radius);
   padding: 22px;
 }
