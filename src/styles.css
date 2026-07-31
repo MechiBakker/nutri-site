@@ -173,7 +173,7 @@ section { padding: 88px 0; }
 
 /* ---------- TIENDA ---------- */
 .tienda {
-  background: var(--blanco) url('/Foto5.jpeg') top left;
+  background: var(--blanco) url('/Foto5.jpeg') center center;
 }
 
 .productos-grid {
