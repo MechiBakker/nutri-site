@@ -313,7 +313,6 @@ section { padding: 88px 0; }
 /* ---------- TURNOS ---------- */
 .turnos {
   background: var(--verde-claro);
-  color: var(--hueso);
 }
 
 .turnos .section-header h2 .eyebrow{ color: var(--rosa); }
