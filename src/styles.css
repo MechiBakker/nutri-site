@@ -173,12 +173,7 @@ section { padding: 88px 0; }
 
 /* ---------- TIENDA ---------- */
 .tienda {
-  /* Combina un color con transparencia (RGBA) sobre el patrón */
-  background: 
-    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url('/fondo.png') repeat top left;
-  
-  background-color: var(--blanco);
+  background: var(--blanco) url('/Foto5.jpeg') top left;
 }
 
 .productos-grid {
