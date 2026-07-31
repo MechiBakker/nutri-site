@@ -253,6 +253,7 @@ section { padding: 88px 0; }
   transition: box-shadow 0.2s ease, transform 0.2s ease;
   scroll-snap-align: start;
   flex-basis: min(95vw, 390px);
+  flex-shrink: 0;
 }
 
 .producto-card:hover {
