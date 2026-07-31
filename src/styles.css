@@ -251,8 +251,8 @@ section { padding: 88px 0; }
   color: var(--hueso);
 }
 
-.turnos .section-header h2 { color: var(--rosa); }
-.turnos .section-header p { color: var(--verde-oscuro); }
+.turnos .section-header h2 { color: var(--verde-oscuro); }
+.turnos .section-header p { color: var(--rosa); }
 .turnos .eyebrow { color: var(--verde-oscuro); }
 
 .turnos-grid {
@@ -282,7 +282,7 @@ section { padding: 88px 0; }
 }
 
 .modalidad-card p {
-  color: rgba(250, 249, 244, 0.918);
+  color: rgba(250, 249, 244, 0.18);
   font-size: 0.94rem;
   margin: 0;
 }
