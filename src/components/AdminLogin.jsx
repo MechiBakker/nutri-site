@@ -15,7 +15,7 @@ export default function AdminLogin() {
     const { error } = await supabase.auth.signInWithPassword({ email, password })
 
     setCargando(false)
-    if (error) setError('Email o contraseña incorrectos.')
+    if (error) setError(`Error de Supabase: ${error.message}`)
   }
 
   return (

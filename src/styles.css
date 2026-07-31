@@ -315,7 +315,6 @@ section { padding: 88px 0; }
   background: var(--verde-claro);
 }
 
-.turnos .section-header h2 .eyebrow{ color: var(--rosa); }
 .turnos .section-header p { color: var(--verde-oscuro); }
 .turnos .eyebrow { color: var(--verde-oscuro); }
 
@@ -411,7 +410,7 @@ section { padding: 88px 0; }
 /* ---------- FOOTER ---------- */
 footer {
   background: var(--verde-oscuro);
-  color: rgba(250, 249, 244, 0.295);
+  color: rgba(250, 249, 244);
   text-align: center;
   padding: 26px 0 34px;
   font-size: 0.85rem;
