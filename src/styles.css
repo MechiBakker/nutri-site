@@ -8,8 +8,8 @@
   --texto: #a2af52;
   --texto-suave: #a2af52;
 
-  --font-display: 'Calibri', serif;
-  --font-body: 'Calibri', sans-serif;
+  --font-display: 'Poppins', serif;
+  --font-body: 'Poppins', sans-serif;
 
   --radius: 22px;
 }
@@ -191,7 +191,7 @@ section { padding: 88px 0; }
   background-size: auto;
   
   /* Tu opacidad del 50% */
-  opacity: 0.3; 
+  opacity: 0.1; 
   
   /* --- EFECTO ESPEJO AQUÍ --- */
   /* Voltea horizontalmente (-1 en X, mantiene 1 en Y) */

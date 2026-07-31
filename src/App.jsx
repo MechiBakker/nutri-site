@@ -10,7 +10,7 @@ export default function App() {
       <Hero />
       <Divisor fondo="#ffffff" />
       <Tienda />
-      <Divisor fondo="#3f4a37" />
+      <Divisor fondo="#ffffff" />
       <Turnos />
       <Footer />
     </>
