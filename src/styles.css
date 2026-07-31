@@ -8,8 +8,8 @@
   --texto: #a2af52;
   --texto-suave: #b7c45d;
 
-  --font-display: 'Balibong', serif;
-  --font-body: 'DIN Pro', sans-serif;
+  --font-display: 'Calibri', serif;
+  --font-body: 'Calibri', sans-serif;
 
   --radius: 22px;
 }
@@ -269,8 +269,8 @@ section { padding: 88px 0; }
 }
 
 .modalidad-card {
-  background: rgb(250, 249, 244);
-  border: 1px solid rgb(250, 249, 244);
+  background: rgba(250, 249, 244, 0.06);
+  border: 1px solid rgba(250, 249, 244, 0.18);
   border-radius: var(--radius);
   padding: 22px;
 }
