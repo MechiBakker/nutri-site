@@ -174,7 +174,8 @@ section { padding: 88px 0; }
 .tienda {
   position: relative;
   background-color: var(--blanco);
-  isolation: isolate; /* Protege el texto/contenido para que no se oculte */
+  /* Fundamental para que el texto siga viéndose encima de la imagen volteada */
+  isolation: isolate; 
 }
 
 .tienda::before {
@@ -185,14 +186,19 @@ section { padding: 88px 0; }
   width: 100%;
   height: 100%;
   
-  /* Tu imagen centrada, sin repetir y en tamaño original */
+  /* Imagen original centrada y sin repetir */
   background: url('/Foto5.jpeg') no-repeat center center;
   background-size: auto;
   
   /* Tu opacidad del 50% */
   opacity: 0.5; 
   
-  z-index: -1; /* Mantiene la imagen detrás del contenido */
+  /* --- EFECTO ESPEJO AQUÍ --- */
+  /* Voltea horizontalmente (-1 en X, mantiene 1 en Y) */
+  transform: scaleX(-1); 
+  /* --------------------------- */
+  
+  z-index: -1; /* Mantiene la imagen detrás */
 }
 
 .productos-grid {
