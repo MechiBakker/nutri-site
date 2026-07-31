@@ -257,7 +257,9 @@ section { padding: 88px 0; }
   border: 1px solid rgba(63, 74, 55, 0.08);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
   scroll-snap-align: start;
-  flex-basis: min(95vw, 390px);
+  flex-basis: 280px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .producto-card:hover {
@@ -430,6 +432,7 @@ footer {
   .hero-foto-wrap { order: 1; }
   .turnos-grid { grid-template-columns: 1fr; }
   section { padding: 64px 0; }
+  .producto-card { flex-basis: 82%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
