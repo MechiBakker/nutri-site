@@ -247,7 +247,7 @@ section { padding: 88px 0; }
 
 /* ---------- TURNOS ---------- */
 .turnos {
-  background: var(--verde-oscuro);
+  background: var(--verde-claro);
   color: var(--hueso);
 }
 
