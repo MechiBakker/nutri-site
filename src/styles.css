@@ -191,7 +191,7 @@ section { padding: 88px 0; }
   background-size: auto;
   
   /* Tu opacidad del 50% */
-  opacity: 0.5; 
+  opacity: 0.4; 
   
   /* --- EFECTO ESPEJO AQUÍ --- */
   /* Voltea horizontalmente (-1 en X, mantiene 1 en Y) */
@@ -309,7 +309,7 @@ section { padding: 88px 0; }
 }
 
 .modalidad-card p {
-  color: rgba(250, 249, 244, 0.918);
+  color: var(--verde-oscuro);
   font-size: 0.94rem;
   margin: 0;
 }
