@@ -202,9 +202,7 @@ section { padding: 88px 0; }
 }
 
 .carrusel-wrap {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  position: relative;
 }
 
 .productos-carrusel {
@@ -214,7 +212,6 @@ section { padding: 88px 0; }
   scroll-snap-type: x mandatory;
   scroll-padding-left: 4px;
   padding: 4px 4px 16px;
-  flex: 1;
   scrollbar-width: thin;
   scrollbar-color: var(--verde-seco) transparent;
 }
@@ -226,6 +223,10 @@ section { padding: 88px 0; }
 }
 
 .carrusel-flecha {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 2;
   flex-shrink: 0;
   width: 42px;
   height: 42px;
@@ -238,8 +239,12 @@ section { padding: 88px 0; }
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 6px 16px rgba(63, 74, 55, 0.18);
   transition: background 0.15s ease;
 }
+
+.carrusel-flecha.izq { left: -6px; }
+.carrusel-flecha.der { right: -6px; }
 
 .carrusel-flecha:hover { background: var(--verde-claro); }
 
@@ -253,7 +258,6 @@ section { padding: 88px 0; }
   transition: box-shadow 0.2s ease, transform 0.2s ease;
   scroll-snap-align: start;
   flex-basis: min(95vw, 390px);
-  flex-shrink: 0;
 }
 
 .producto-card:hover {
