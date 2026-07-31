@@ -36,6 +36,17 @@ create policy "Insertar turnos desde la web"
   on turnos for insert
   with check (true);
 
+-- Un usuario autenticado (el admin, logueado en /admin) puede
+-- ver todos los productos (activos e inactivos) e insertar/editar/borrar.
+create policy "Admin lee todos los productos"
+  on productos for select
+  using (auth.role() = 'authenticated');
+
+create policy "Admin gestiona productos"
+  on productos for all
+  using (auth.role() = 'authenticated')
+  with check (auth.role() = 'authenticated');
+
 -- Nadie externo puede leer los turnos (solo vos, desde el panel de Supabase
 -- con tu usuario, o con la service_role key desde un backend).
 -- No se crea policy de "select" para turnos: por defecto queda bloqueada.

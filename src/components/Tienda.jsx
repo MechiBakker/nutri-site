@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { supabase } from '../lib/supabaseClient'
 
 // Productos de ejemplo: se muestran solo si todavía no cargaste
@@ -34,6 +34,15 @@ export default function Tienda() {
   const [productos, setProductos] = useState([])
   const [cargando, setCargando] = useState(true)
   const [esDemo, setEsDemo] = useState(false)
+  const carruselRef = useRef(null)
+
+  function desplazar(direccion) {
+    const el = carruselRef.current
+    if (!el) return
+    const primeraCard = el.querySelector('.producto-card')
+    const ancho = primeraCard ? primeraCard.offsetWidth + 26 : 300
+    el.scrollBy({ left: direccion * ancho, behavior: 'smooth' })
+  }
 
   useEffect(() => {
     let activo = true
@@ -83,10 +92,28 @@ export default function Tienda() {
         {cargando ? (
           <p className="estado-tienda">Cargando recetarios…</p>
         ) : (
-          <div className="productos-grid">
-            {productos.map((p) => (
-              <ProductoCard key={p.id} producto={p} />
-            ))}
+          <div className="carrusel-wrap">
+            <button
+              className="carrusel-flecha izq"
+              onClick={() => desplazar(-1)}
+              aria-label="Recetario anterior"
+            >
+              ‹
+            </button>
+
+            <div className="productos-carrusel" ref={carruselRef}>
+              {productos.map((p) => (
+                <ProductoCard key={p.id} producto={p} />
+              ))}
+            </div>
+
+            <button
+              className="carrusel-flecha der"
+              onClick={() => desplazar(1)}
+              aria-label="Siguiente recetario"
+            >
+              ›
+            </button>
           </div>
         )}
       </div>

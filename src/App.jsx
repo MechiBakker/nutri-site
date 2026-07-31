@@ -1,18 +1,12 @@
-import Hero from './components/Hero'
-import Tienda from './components/Tienda'
-import Turnos from './components/Turnos'
-import Footer from './components/Footer'
-import Divisor from './components/Divisor'
+import { Routes, Route } from 'react-router-dom'
+import Sitio from './pages/Sitio'
+import Admin from './pages/Admin'
 
 export default function App() {
   return (
-    <>
-      <Hero />
-      <Divisor fondo="#ffffff" />
-      <Tienda />
-      <Divisor fondo="#ffffff" />
-      <Turnos />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Sitio />} />
+      <Route path="/admin" element={<Admin />} />
+    </Routes>
   )
 }
