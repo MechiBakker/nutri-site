@@ -172,7 +172,9 @@ section { padding: 88px 0; }
 }
 
 /* ---------- TIENDA ---------- */
-.tienda { background: var(--blanco); }
+.tienda {
+  background: var(--blanco) url('/fondo.png') repeat top left;
+}
 
 .productos-grid {
   display: grid;
@@ -252,7 +254,7 @@ section { padding: 88px 0; }
 }
 
 .turnos .section-header h2 { color: var(--verde-oscuro); }
-.turnos .section-header p { color: var(--rosa); }
+.turnos .section-header p { color: var(--verde-oscuro); }
 .turnos .eyebrow { color: var(--verde-oscuro); }
 
 .turnos-grid {
@@ -282,7 +284,7 @@ section { padding: 88px 0; }
 }
 
 .modalidad-card p {
-  color: rgba(250, 249, 244, 0.18);
+  color: rgba(250, 249, 244, 0.918);
   font-size: 0.94rem;
   margin: 0;
 }
