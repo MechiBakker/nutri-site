@@ -351,7 +351,7 @@ footer {
   text-align: center;
   padding: 26px 0 34px;
   font-size: 0.85rem;
-  border-top: 1px solid rgba(250, 249, 244, 0.12);
+  border-top: 1px solid rgb(250, 249, 244);
 }
 
 /* ---------- RESPONSIVE ---------- */
