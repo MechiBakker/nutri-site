@@ -316,7 +316,8 @@ section { padding: 88px 0; }
   color: var(--hueso);
 }
 
-.turnos .section-header h2 { color: var(--rosa); }
+.turnos .section-header h2 { color: var(--verde-oscuro); }
+.turnos .section-header h2 .eyebrow{ color: var(--rosa); }
 .turnos .section-header p { color: var(--verde-oscuro); }
 .turnos .eyebrow { color: var(--verde-oscuro); }
 
