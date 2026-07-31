@@ -12,11 +12,11 @@ export default function Divisor({ fondo = '#faf9f4' }) {
       <path
         d="M0 23 C 150 5, 300 41, 450 23 S 750 5, 900 23 S 1100 38, 1200 23"
         fill="none"
-        stroke="#8a9a76"
+        stroke="#e95f9e"
         strokeWidth="2"
         opacity="0.55"
       />
-      <g fill="#6f7f5f" opacity="0.5">
+      <g fill="#e95f9e" opacity="0.5">
         <ellipse cx="150" cy="14" rx="7" ry="3" transform="rotate(-25 150 14)" />
         <ellipse cx="450" cy="12" rx="7" ry="3" transform="rotate(20 450 12)" />
         <ellipse cx="750" cy="14" rx="7" ry="3" transform="rotate(-25 750 14)" />
